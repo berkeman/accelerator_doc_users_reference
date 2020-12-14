@@ -461,6 +461,7 @@ They exist to provide some convenience methods on chains.
 \texttt{column\_counts()} & The number of datasets each column appears in.\\
 \texttt{column\_count()} & Number of datasets in this chain that contain a specified column.\\
 \texttt{with\_column()} & Return a new chain without any datasets that don't contain a specified column.\\
+\texttt{none\_support()} & Return \pyTrue if any dataset in the chain has None-support for this column.\\
 \mintinline{python}|iterate(...)| & Same arguments as \texttt{Dataset.iterate()}.  Will iterate over the whole chain.\\
 \stoptabletwo
 \noindent Detailed description of the functions, where neccessary, follows.
