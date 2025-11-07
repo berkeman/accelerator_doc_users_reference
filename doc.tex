@@ -87,14 +87,14 @@
 \AfterEndEnvironment{minted}{\end{mdframed}}
 
 \newminted[python]{python}{escapeinside=||}
-\newminted[python2]{python2}{escapeinside=||}
+%\newminted[python]{python}{escapeinside=||}
 
 % Common Python tokens
 \newcommand{\pyNone}{\mintinline{python}/None/\xspace}
 \newcommand{\pyTrue}{\mintinline{python}/True/\xspace}
 \newcommand{\pyFalse}{\mintinline{python}/False/\xspace}
 \newcommand{\py}[1]{\mintinline{python}{#1}}
-\newcommand{\pytwo}[1]{\mintinline{python2}{#1}}
+%\newcommand{\pytwo}[1]{\mintinline{python2}{#1}}
 
 % minted Shell
 \newminted[shell]{bash}{}
@@ -172,7 +172,7 @@
   \vspace*{1.0cm}
   {\Huge ExAx:  The Accelerator}\\[0.7cm]
   {\Large User's Reference}\\[0.5cm]
-  {\large 2021-05-27, \textbf{draft}}
+  {\large 2025-11-07, \textbf{draft}}
   \vspace{1.3cm}
   \begin{figure}[h]
     \centering
@@ -182,37 +182,16 @@
   {\Large --- Fast and Reproducible Data Processing ---}
 
   \vfill
+  {\Large NOTE: Parts of this document is out of date.\\  We are
+  currently prioritising the online documentation available at\\[2ex]
+  \texttt{https://exax.readthedocs.io}}
+  \vfill
   { Anders Berkeman, Carl Drougge, and Sofia H\"orberg}\\
   {\tiny{version: \inputfile{gitrevision}}}
 \end{center}
 \thispagestyle{empty}
 
 
-\newpage
-\thispagestyle{empty}
-\section*{Document History}
-
-\begin{tabular}{rrp{8cm}}
- date       & git hash          & description\\[0.75ex]
- 2018-04-23 & \texttt{772990f4} & First open version.\\
- 2018-05-28 & \texttt{a6d6750b} & Updated parts of Urd chapters.\\
- 2019-06-11 & \texttt{24b4b6c2} & Major makeover.\\
- 2019-06-24 & \texttt{db47cc19} & More on \texttt{depend\_extra}, valid column names, appeding columns in
-  synthesis, and some formatting.\\
- 2020-01-22 & \texttt{04fb2389} &  New class based interface.\\
- 2020-02-14 & \texttt{562e8d10} & PyPI dev release.\\
-
- 2020-04-22 & \texttt{54031595} & PyPI dev release.
- Relative paths in configfile, \texttt{link\_result()} in build
- scripts, \texttt{Job.files()}, s/daemon/server/g.\\
-
- 2020-10-12 & \texttt{afa950a9} & PyPI dev release,
- updated chapters 3 -- 8.  Missing in this version: \texttt{board} and
- latest class additions.\\
-
- 2020-12-14 & \texttt{0b85fa06} & Update Appendix~A and~B.\\
- 2021-05-27 & \texttt{\inputfile{gitrevision}} & Several minor improvements and bug fixes.\\
-\end{tabular}
 
 \newpage
 \tableofcontents
